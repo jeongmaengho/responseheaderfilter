@@ -21,12 +21,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 public interface MappingProcessor {
-  void preProcess(HttpServletRequest request, HttpServletResponse response, Mapping applicableMapping);
+  void preProcess(HttpServletRequest request, HttpServletResponse response, Rule applicableRule);
 
   void applyHeaders(HttpServletRequest request,
                     HttpServletResponse response,
-                    List<Mapping.ResponseHeader> responseHeaders,
-                    Mapping applicableMapping);
+                    List<Rule.ResponseHeader> responseHeaders,
+                    Rule applicableRule);
 
-  void postProcess(HttpServletRequest request, HttpServletResponse response, Mapping applicableMapping);
+  void postProcess(HttpServletRequest request, HttpServletResponse response, Rule applicableRule);
 }
