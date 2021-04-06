@@ -136,6 +136,12 @@ public class ConfigProcessor {
     DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
     Document doc;
     try{
+      docBuilderFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+      docBuilderFactory.setFeature("http://xml.org/sax/features/external-general-entities", false);
+      docBuilderFactory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
+      docBuilderFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+      docBuilderFactory.setXIncludeAware(false);
+      docBuilderFactory.setExpandEntityReferences(false);
       DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
       doc = docBuilder.parse(configFile);
     }catch(Exception ex){
