@@ -125,7 +125,7 @@ public class ConfigProcessor {
    * </ol>
    *
    * For rules on the implementation of the filter, go here -
-   * {@link ResponseHeaderManagerFilter#doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)}
+   * {@link ResponseHeaderManagerFilter#doFilter(jakarta.servlet.ServletRequest, jakarta.servlet.ServletResponse, jakarta.servlet.FilterChain)}
    * @see #getCondition(org.w3c.dom.Node)
    * @see #getResponseHeader(org.w3c.dom.Node)
    */
