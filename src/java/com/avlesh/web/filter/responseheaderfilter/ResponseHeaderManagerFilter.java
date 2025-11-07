@@ -27,7 +27,7 @@ import java.util.regex.Matcher;
 import java.util.concurrent.ConcurrentHashMap;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.Log;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * <code>ResponseHeaderManagerFilter</code> is a Java Web Filter for any J2EE compliant web application server

@@ -22,7 +22,7 @@
   <property name="build.dir" value="build" />
   <property name="dist.dir" value="dist" />
   <property name="project.name" value="response-header-filter" />
-  <property name="project.version" value="2.0" />
+  <property name="project.version" value="2.1" />
   <property name="archive.name" value="${project.name}-${project.version}" />
 
   <path id="classpath">
